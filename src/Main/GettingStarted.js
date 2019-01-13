@@ -8,6 +8,7 @@ import {
 } from './Intro';
 import openHatch from '../img/openhatch.png';
 import mozilla from '../img/mozilla.png';
+import openStack from '../img/openstack.png';
 
 const ProjectDivide = styled.div`
   height: ${props => props.height ? props.height : '50px'};
@@ -72,14 +73,17 @@ class GettingStarted extends Component {
 
           <ProjectDivide/>
 
-          <Project title="OpenHatch" imgSrc={openHatch} width="70%">
+          <Project title="OpenStack" imgSrc={openStack} width="70%">
             <SectionBody>
-              <a href="https://openhatch.org/" target="_blank">OpenHatch</a> is a non-profit dedicated to matching prospective free software contributors with communities,
-              tools, and education, while also providing online tools for new contributors.
+              <a href="https://openstack.org/" target="_blank">OpenStack</a> is also a great project to start out with. The OpenStack project is divided into
+              various components: Swift, Glance, Nova, Horizon, Keystone etc. Each of these components have their own page. If you head over to
+              the <a href="https://wiki.openstack.org/wiki/Main_Page" target="_blank">OpenStack Wiki Main page</a>, you can see the components listed seperately.
             </SectionBody>
             <SectionBody>
-              It's perfect for beginners, as they will help you find a project based on a number of criteria such as language or the toughness
-              of bugs.  Head over to OpenHatch's <a href="https://openhatch.org/search/" target="_blank">search page</a> to try it out for yourself.
+              Each component's page contains the link to repository, a bug tracker (<a href="https://bugs.launchpad.net/openstack/" target="_blank">Launchpad</a>),
+              and documentation. OpenStack calls their beginner bugs as "Low Hanging Fruits",
+              <a href="https://bugs.launchpad.net/openstack/+bugs?field.tag=low-hanging-fruit" target="_blank"> click here</a> to see them!.
+
             </SectionBody>
           </Project>
           <ProjectDivide/>
