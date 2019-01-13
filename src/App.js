@@ -22,6 +22,7 @@ class App extends Component {
         />
         <Main
           page={page}
+          selectPage={page => this.selectPage(page)}
         />
       </div>
     );
