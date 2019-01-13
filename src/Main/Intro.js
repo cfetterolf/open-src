@@ -15,7 +15,7 @@ export const Image = styled.img`
   height: auto;
 `;
 
-export const LinkBox = styled.div`
+export const ShadowBox = styled.div`
   padding: 10px;
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
   background-color: white;
@@ -42,8 +42,6 @@ class Intro extends Component {
             </SectionBody>
           </div>
         </Section>
-
-        {/* No Experience? */}
         <Section>
           <h3 className="display-6">I Have No Experience, Can I Still Contribute?</h3>
           <div className="row">
@@ -61,26 +59,12 @@ class Intro extends Component {
               </SectionBody>
             </div>
             <SectionBody className="col-12 col-md-6">
-            <LinkBox>
-              <a
-                href="https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0"
-                data-href="https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0"
-                title="https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0"
-                rel="nofollow"
-                target="_blank"
-                style={{color: 'gray', textDecoration: 'none'}}
-              >
-                <strong style={{color: '#282828'}}>
-                  Why You Should Contribute to Open Source Software Right Now
-                </strong>
-                <br/>
-                <div style={{marginTop: '10px'}}>
-                  For a budding software developer, contributing to open source seems exciting but daunting. I know this because...
-                </div>
-                <br/>
-                <em>Medium.com</em>
-              </a>
-            </LinkBox>
+            <LinkBox
+              link="https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0"
+              title="Why You Should Contribute to Open Source Software Right Now"
+              desc="For a budding software developer, contributing to open source seems exciting but daunting. I know this because..."
+              site="Medium.com"
+            />
             </SectionBody>
           </div>
         </Section>
@@ -100,5 +84,22 @@ class Intro extends Component {
     )
   }
 }
+
+export const LinkBox = ({ link, title, desc, site }) => (
+  <ShadowBox>
+    <a
+      href={link}
+      data-href={link}
+      title={link}
+      rel="nofollow"
+      target="_blank"
+      style={{color: 'gray', textDecoration: 'none'}}
+    >
+      <strong style={{color: '#282828'}}>{title}</strong><br/>
+      <div style={{marginTop: '10px'}}>{desc}</div><br/>
+      <em>{site}</em>
+    </a>
+  </ShadowBox>
+);
 
 export default Intro;

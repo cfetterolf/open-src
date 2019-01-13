@@ -13,35 +13,33 @@ class GettingStarted extends Component {
     return (
       <div>
         <Section>
-          <h3 className="display-6">Getting Started</h3>
+          <h3 className="display-6">Learning Git</h3>
           <div className="row">
             <div className="col-12">
               <SectionBody>
-                You can find open source projects anywhere and everywhere, and most are looking
-                for contributors, regardless of your level of experience.  <a href="https://opensource.com/resources/what-open-source" target="_blank">
-                This article</a> on Medium makes a great argument for why a new developer should jump right into open source, even though making
-                contributions to a "real" codebase can seem daunting.
+                Before jumping into any open source project, head over to egghead.io and take this free tutorial by Kent C. Dodds, which
+                teaches you basic git skills like cloning a repository, making a new branch, and creating your pull request (a proposed change to the code).  Although
+                git can be confusing at first, it gets easier with time and is crucial to anyone who wants to contribute to a shared codebase.
               </SectionBody>
-              <LinkBox>
-                <a
-                  href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github"
-                  data-href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github"
-                  title="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github"
-                  rel="nofollow"
-                  target="_blank"
-                  style={{color: 'gray', textDecoration: 'none'}}
-                >
-                  <strong style={{color: '#282828'}}>
-                    How to Contribute to an Open Source Project on GitHub
-                  </strong>
-                  <br/>
-                  <div style={{marginTop: '10px'}}>
-                    "Feel free to submit a PR!" - words often found in GitHub issues, but met with confusion and fear by many. Getting…
-                  </div>
-                  <br/>
-                  <em>egghead.io</em>
-                </a>
-              </LinkBox>
+              <LinkBox
+                link="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github"
+                title="How to Contribute to an Open Source Project on GitHub"
+                desc='"Feel free to submit a PR!" - words often found in GitHub issues, but met with confusion and fear by many. Getting…'
+                site="egghead.io"
+              />
+            </div>
+          </div>
+        </Section>
+        <Section>
+          <h3 className="display-6">Potential Projects</h3>
+          <div className="row">
+            <div className="col-12">
+              <SectionBody>
+                Before jumping into any open source project, head over to egghead.io and take this free tutorial by Kent C. Dodds, which
+                teaches you basic git skills like cloning a repository, making a new branch, and creating your pull request (a proposed change to the code).  Although
+                git can be confusing at first, it gets easier with time and is crucial to anyone who wants to contribute to a shared codebase.
+              </SectionBody>
+
             </div>
           </div>
         </Section>
