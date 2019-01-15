@@ -9,6 +9,7 @@ import {
 import openHatch from '../img/openhatch.png';
 import mozilla from '../img/mozilla.png';
 import openStack from '../img/openstack.png';
+import wikipedia from '../img/wiki.png';
 
 const ProjectDivide = styled.div`
   height: ${props => props.height ? props.height : '50px'};
@@ -83,7 +84,19 @@ class GettingStarted extends Component {
               Each component's page contains the link to repository, a bug tracker (<a href="https://bugs.launchpad.net/openstack/" target="_blank">Launchpad</a>),
               and documentation. OpenStack calls their beginner bugs as "Low Hanging Fruits",
               <a href="https://bugs.launchpad.net/openstack/+bugs?field.tag=low-hanging-fruit" target="_blank"> click here</a> to see them!.
+            </SectionBody>
+          </Project>
 
+          <ProjectDivide/>
+
+          <Project title="Wikipedia" imgSrc={wikipedia} width="50%" offset>
+            <SectionBody>
+              Most of the people on the planet have heard of the name Wikipedia but how many have ever thought of contributing to it? Wikipedia is supported by
+              Wikimedia Foundation. Mediawiki tags their easy bugs with the 'easy' tag. <a href="https://phabricator.wikimedia.org/maniphest/?bug_severity=normal&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&bug_status=NEW&bug_status=REOPENED&columnlist=product%2Ccomponent%2Cchangeddate%2Cbug_severity%2Cpriority%2Cshort_desc&keywords=easy&keywords_type=allwords&order=changeddate%20DESC%2Cproduct%2Ccomponent">Click here</a> to
+              search for those introductory bugs.
+            </SectionBody>
+            <SectionBody>
+              Alternatively, <a href="https://www.whatcanidoformozilla.org/" target="_blank">this site</a> suggests you projects based on the programming skill you select. Once you make your choice, it takes you to the respective mozilla project.
             </SectionBody>
           </Project>
           <ProjectDivide/>
