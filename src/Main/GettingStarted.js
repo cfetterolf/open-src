@@ -15,6 +15,8 @@ const ProjectDivide = styled.div`
   height: ${props => props.height ? props.height : '50px'};
 `;
 
+export const Link = ({ href, children }) => <a href={href} target="_blank">{children}</a>;
+
 class GettingStarted extends Component {
   state = {};
 
@@ -95,9 +97,15 @@ class GettingStarted extends Component {
               Wikimedia Foundation. Mediawiki tags their easy bugs with the 'easy' tag. <a href="https://phabricator.wikimedia.org/maniphest/?bug_severity=normal&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&bug_status=NEW&bug_status=REOPENED&columnlist=product%2Ccomponent%2Cchangeddate%2Cbug_severity%2Cpriority%2Cshort_desc&keywords=easy&keywords_type=allwords&order=changeddate%20DESC%2Cproduct%2Ccomponent">Click here</a> to
               search for those introductory bugs.
             </SectionBody>
-            <SectionBody>
-              Alternatively, <a href="https://www.whatcanidoformozilla.org/" target="_blank">this site</a> suggests you projects based on the programming skill you select. Once you make your choice, it takes you to the respective mozilla project.
+            <SectionBody style={{paddingBottom: 0}}>
+              Some other interesting links:
             </SectionBody>
+            <ul className="">
+              <li className=""><Link href="https://www.mediawiki.org/wiki/Gerrit/Tutorial/tl;dr">Getting started</Link></li>
+              <li className=""><Link href="https://www.mediawiki.org/wiki/How_to_become_a_MediaWiki_hacker">How to become a Mediawiki Hacker</Link></li>
+              <li className=""><Link href="https://www.mediawiki.org/wiki/MediaWiki-Vagrant">Installing Mediawiki on local system</Link></li>
+              <li className=""><Link href="https://www.mediawiki.org/wiki/Good_first_bugs">Good first bugs</Link></li>
+            </ul>
           </Project>
           <ProjectDivide/>
         </Section>
