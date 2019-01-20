@@ -9,7 +9,7 @@ class Nav extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="">Open Source at Midd</a>
+          <a className="navbar-brand" href="">Open Source at Middlebury</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -29,6 +29,9 @@ class Nav extends Component {
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a className="dropdown-item" href="#django" onClick={() => selectPage('django')}>Django</a>
                 </div>
+              </li>
+              <li className={`nav-item ${page === 'sources' ? 'active' : ''}`}>
+                <a className="nav-link" href="#sources" onClick={() => selectPage('sources')}>Sources</a>
               </li>
             </ul>
           </div>
