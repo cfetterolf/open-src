@@ -4,7 +4,7 @@ import Main from './Main';
 
 class App extends Component {
   state = {
-    page: 'start',
+    page: 'intro',
   };
 
   selectPage = page => {

@@ -10,6 +10,7 @@ import openHatch from '../img/openhatch.png';
 import mozilla from '../img/mozilla.png';
 import openStack from '../img/openstack.png';
 import wikipedia from '../img/wiki.png';
+import django from '../img/django.png';
 
 const ProjectDivide = styled.div`
   height: ${props => props.height ? props.height : '50px'};
@@ -41,6 +42,9 @@ class GettingStarted extends Component {
             </div>
           </div>
         </Section>
+
+        <ProjectDivide/>
+        
         <Section>
           <h3 className="display-6">Projects</h3>
           <SectionBody>
@@ -93,7 +97,7 @@ class GettingStarted extends Component {
 
           <Project title="Wikipedia" imgSrc={wikipedia} width="50%" offset>
             <SectionBody>
-              Most of the people on the planet have heard of the name Wikipedia but how many have ever thought of contributing to it? Wikipedia is supported by
+              Although most people have heard the name Wikipedia, not many have thought of contributing to it. Wikipedia is supported by
               Wikimedia Foundation. Mediawiki tags their easy bugs with the 'easy' tag. <a href="https://phabricator.wikimedia.org/maniphest/?bug_severity=normal&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&bug_status=NEW&bug_status=REOPENED&columnlist=product%2Ccomponent%2Cchangeddate%2Cbug_severity%2Cpriority%2Cshort_desc&keywords=easy&keywords_type=allwords&order=changeddate%20DESC%2Cproduct%2Ccomponent">Click here</a> to
               search for those introductory bugs.
             </SectionBody>
@@ -105,6 +109,26 @@ class GettingStarted extends Component {
               <li className=""><Link href="https://www.mediawiki.org/wiki/How_to_become_a_MediaWiki_hacker">How to become a Mediawiki Hacker</Link></li>
               <li className=""><Link href="https://www.mediawiki.org/wiki/MediaWiki-Vagrant">Installing Mediawiki on local system</Link></li>
               <li className=""><Link href="https://www.mediawiki.org/wiki/Good_first_bugs">Good first bugs</Link></li>
+            </ul>
+          </Project>
+
+          <ProjectDivide/>
+
+          <Project title="Django" imgSrc={django} width="70%">
+            <SectionBody>
+              <Link href="https://www.djangoproject.com/">Django</Link> is a Python based web-framework used by many well-known companies, such as Instagram.
+              To start contributing to Django, head over to the page <Link href="https://docs.djangoproject.com/en/dev/internals/contributing/">Contributing to Django</Link>,
+              which lists many helpful links such as an issue tracker, mailing list, and the community page.
+            </SectionBody>
+            <SectionBody style={{paddingBottom: 0}}>
+              Helpful links:
+            </SectionBody>
+            <ul className="">
+              <li className=""><Link href="https://docs.djangoproject.com/en/dev/internals/contributing/new-contributors/">Advice for new contributors</Link></li>
+              <li className=""><Link href="https://docs.djangoproject.com/en/dev/intro/contributing/">Writing your first patch</Link></li>
+              <li className=""><Link href="https://docs.djangoproject.com/en/dev/internals/contributing/new-contributors/#first-steps">First steps</Link></li>
+              <li className=""><Link href="https://code.djangoproject.com/query?status=!closed&easy=1">Easy pickings</Link></li>
+              <li className=""><Link href="https://code.djangoproject.com/wiki/LittleEasyImprovements">Little, easy improvements</Link></li>
             </ul>
           </Project>
           <ProjectDivide/>

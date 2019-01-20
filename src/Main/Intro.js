@@ -41,10 +41,14 @@ class Intro extends Component {
           <div className="row">
             <div className="col-12 col-md-6">
               <SectionBody>
-                Open Source Software is a computer software whose source code is made
+                Open source software is computer software whose source code is made
                 publicly available for modification and enhancements. It is released under
                 various licenses like BSD, MIT etc. <a href="https://opensource.com/resources/what-open-source" target="_blank">Click here</a> to
                 learn more.
+              </SectionBody>
+              <SectionBody>
+                Open source software's authors make its source code available to others who would like to view that code, copy it, learn from it, alter it, or share it.
+                Linux, one of the most popular operating systems, is a great example of open source software.
               </SectionBody>
             </div>
             <div className="col-12 col-md-6">
@@ -84,7 +88,7 @@ class Intro extends Component {
             <div className="col-12 col-md-6">
               <SectionBody>
                 You can find open source projects anywhere and everywhere, and most are looking
-                for contributors, regardless of your level of experience.  <a href="https://opensource.com/resources/what-open-source" target="_blank">
+                for contributors, regardless of your level of experience.  <a href="https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0" target="_blank">
                 This article</a> on Medium makes a great argument for why a new developer should jump right into open source, even though making
                 contributions to a "real" codebase can seem daunting.
               </SectionBody>

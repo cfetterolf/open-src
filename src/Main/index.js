@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import Intro from './Intro';
 import GettingStarted from './GettingStarted';
 import Django from './Django';
+import Sources from './Sources';
 
 const Container = styled.div`
   margin-top: 20px;
@@ -26,6 +27,9 @@ class Main extends Component {
         break;
       case 'django':
         content = <Django/>
+        break;
+      case 'sources':
+        content = <Sources/>
         break;
       default:
         content = <div>Error: Please Refresh Page</div>
