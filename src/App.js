@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Main from './Main';
+import Footer from './Footer';
 
 class App extends Component {
   state = {
@@ -24,6 +25,7 @@ class App extends Component {
           page={page}
           selectPage={page => this.selectPage(page)}
         />
+        <Footer/>
       </div>
     );
   }
