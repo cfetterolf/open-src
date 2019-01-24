@@ -22,12 +22,12 @@ class Nav extends Component {
               <li className={`nav-item ${page === 'start' ? 'active' : ''}`}>
                 <a className="nav-link" href="#gettingstarted" onClick={() => selectPage('start')}>Getting Started</a>
               </li>
-              <li className={`nav-item dropdown ${page === 'django' ? 'active' : ''}`}>
+              <li className={`nav-item dropdown ${page === 'atom' ? 'active' : ''}`}>
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Examples
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#django" onClick={() => selectPage('django')}>Django</a>
+                  <a className="dropdown-item" href="#atom" onClick={() => selectPage('atom')}>Atom</a>
                 </div>
               </li>
               <li className={`nav-item ${page === 'sources' ? 'active' : ''}`}>

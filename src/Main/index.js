@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from '@emotion/styled'
 import Intro from './Intro';
 import GettingStarted from './GettingStarted';
-import Django from './Django';
+import Atom from './Atom';
 import Sources from './Sources';
 
 const Container = styled.div`
@@ -26,8 +26,8 @@ class Main extends Component {
       case 'start':
         content = <GettingStarted {...this.props}/>
         break;
-      case 'django':
-        content = <Django/>
+      case 'atom':
+        content = <Atom/>
         break;
       case 'sources':
         content = <Sources/>

@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 class App extends Component {
   state = {
-    page: 'intro',
+    page: 'atom',
   };
 
   selectPage = page => {
