@@ -24,6 +24,7 @@ class Django extends Component {
                   <li><Link href="https://careers.google.com/">https://careers.google.com/</Link></li>
                   <li><Link href="https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0">https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0</Link></li>
                 </ul>
+
                 <h4 className="display-8">Getting Started</h4>
                 <ul>
                   <li><Link href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github">https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github</Link></li>
@@ -37,6 +38,13 @@ class Django extends Component {
                   <li><Link href="https://www.mediawiki.org/wiki/">https://www.mediawiki.org/wiki/</Link></li>
                   <li><Link href="https://docs.djangoproject.com/en/dev/internals/contributing/">https://docs.djangoproject.com/en/dev/internals/contributing/</Link></li>
                   <li><Link href="https://docs.djangoproject.com/en/dev/internals/contributing/new-contributors/">https://docs.djangoproject.com/en/dev/internals/contributing/new-contributors/</Link></li>
+                </ul>
+
+                <h4 className="display-8">Example: Atom</h4>
+                <ul>
+                  <li><Link href="https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855</Link></li>
+                  <li><Link href="https://git-scm.com/">https://git-scm.com/</Link></li>
+                  <li><Link href="https://github.com/atom/atom/blob/master/CONTRIBUTING.md">https://github.com/atom/atom/blob/master/CONTRIBUTING.md</Link></li>
                 </ul>
               </SectionBody>
             </div>
