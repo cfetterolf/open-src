@@ -52,8 +52,8 @@ class Atom extends Component {
               also means that it is open source!  Before we jump into the code, the first thing we need to do is set up our development environment.
               Because Atom's codebase is shared among all of it's contributors, it uses <Link href="https://git-scm.com/">Git </Link>
               to help track changes to the code and manage version control.
-              To check whether or not you have Git installed on your system, enter git into the command line. If you get messages saying that
-              this command could not be found, you’ll have to download and install it, see <Link href="https://git-scm.com/download">Git’s download page</Link>
+              To check whether or not you have Git installed on your system, enter <strong>git</strong> into the command line and hit enter. If you get messages saying
+              "this command could not be found", you’ll have to download and install it.  See <Link href="https://git-scm.com/download">Git’s download page</Link> for help doing this.
             </SectionBody>
           </div>
           <div className="col-md-5 col-12">
@@ -62,7 +62,8 @@ class Atom extends Component {
         </div>
 
         <SectionBody>
-          The first step to contributing to Atom is to get a copy of the source code.  To do this, navigate to wherever you want the repo to live using <strong>cd</strong>,
+          There are many repositories of code that make up the Atom text editor.  Many of these are packages, or plugins, that add various useful features.  For this tutorial, we are going to add a feature to the <strong>tree-view</strong> package.
+          The first step to contributing to this Atom package is to get a copy of the source code.  To do this, navigate to wherever you want the code to live on your computer using <strong>cd</strong>,
           then run the below command to clone the repository locally on your computer.
         </SectionBody>
         <Block>
@@ -71,7 +72,7 @@ class Atom extends Component {
 
         <SectionBody>
           Now, we install the dependencies for the project.  We can do this by entering the following command.  Note that if any errors, it is most likely a problem with your
-          system (old versions of Python, Node, etc...when I did this on a Mac, I had a faulty version of Xcode command line tools).  Whatever the issue, a quick google search wherever it
+          system (old versions of Python, Node, etc...if you are on a Mac, you may need to update Xcode command line tools).  Whatever the issue, a quick Google search wherever it
           says '<strong>error:</strong>' will most likely do the trick.
         </SectionBody>
         <Block>
@@ -80,7 +81,7 @@ class Atom extends Component {
         </Block>
 
         <SectionBody>
-          From here, you can link Atom to 'development' mode.  This means that when you run an Atom window
+          From here, you can link Atom to 'development' mode.  This means that when you open an Atom window
           with <strong>atom --dev</strong>, you will use your fork instead of the built in package:
         </SectionBody>
         <Block>
@@ -88,18 +89,15 @@ class Atom extends Component {
         </Block>
 
         <SectionBody>
-          Editing a package in Atom is a bit of a circular experience: you're using Atom to modify itself.
-          What happens if you temporarily break something? You don't want the version of Atom you're using to
-          edit to become useless in the process. For this reason, you'll only want to load packages in development
-          mode while you are working on them. You'll perform your editing in stable mode, only switching to development mode to test your changes.
+          Why do we need to utilize development mode?  Editing a package in Atom can be a somewhat circular experience: you're using Atom to modify itself.
+          What happens if you break something? You don't want the version of Atom you're using to
+          edit to become useless in the process. Because of this, you'll perform your editing in stable mode, only switching to development mode to test your changes.
         </SectionBody>
         <SectionBody>
-          To load the <strong>tree-view</strong> package in development mode, create a symlink to it in <strong>~/.atom/dev/packages</strong>.  To do this,
-          run the following commands, which creates the symlink and then opens Atom in development mode:
+          After creating a symlink to the <strong>tree-view</strong> package, run the following command to open Atom in development mode at the current directory:
         </SectionBody>
         <Block>
-          <Code>apm link --dev</Code>
-          <Code>atom --dev path/to/project</Code>
+          <Code>atom --dev .</Code>
         </Block>
         <SectionBody>
           To unlink your package, run <strong>apm unlink --dev</strong> at the top level of the <strong>tree-view</strong> repository.  For now, close the development instance of Atom that just opened--we
@@ -114,7 +112,7 @@ class Atom extends Component {
         </SectionBody>
         <SectionBody>
           There are already many different key mappings built into the package.  Try toggling the tree-view on and off with <strong>CMD-\</strong>, or try moving up and down files in the tree-view with <strong>j</strong> and <strong>k</strong>,
-          respectively.  While hovering over a folder, you can also press <strong>h</strong> to close the folder.  Let's dive into the code to find this last keymap.  If you haven't already, open the <strong>tree-view</strong> repository:
+          respectively.  While hovering over a folder, you can also press <strong>h</strong> to close the folder.  Let's dive into the code to find this last keymap.  If you haven't already, open the <strong>tree-view</strong> repository with default Atom:
         </SectionBody>
         <Block>
           <Code>cd your/path/to/tree-view</Code>

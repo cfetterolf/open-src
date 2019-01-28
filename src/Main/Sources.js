@@ -45,6 +45,22 @@ class Django extends Component {
                   <li><Link href="https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855</Link></li>
                   <li><Link href="https://git-scm.com/">https://git-scm.com/</Link></li>
                   <li><Link href="https://github.com/atom/atom/blob/master/CONTRIBUTING.md">https://github.com/atom/atom/blob/master/CONTRIBUTING.md</Link></li>
+                  <li><Link href="https://flight-manual.atom.io/hacking-atom/sections/contributing-to-official-atom-packages/" /></li>
+                </ul>
+              </SectionBody>
+            </div>
+          </div>
+        </Section>
+        <Section>
+          <h3 className="display-6">Bibliography</h3>
+          <div className="row">
+            <div className="col-12">
+              <SectionBody>
+                <ul>
+                  <li>Chowdhury, Sayan. “How to Get Started with Open Source.” <i>HackerEarth Blog</i>, <Link href="https://www.hackerearth.com/getstarted-opensource/" />.</li>
+                  <li>Tackaberry, Austin. “Why You Should Contribute to Open Source Software Right Now.” <i>Medium.com</i>, Medium, 10 Mar. 2018, <Link href="https://medium.com/@austintackaberry/why-you-should-contribute-to-open-source-software-right-now-bec8bd83cfc0" />.</li>
+                  <li>Todorović Feed, Aleksandar. “6 Starting Points for Open Source Beginners.” <i>Opensource.com</i>, <Link href="https://opensource.com/life/16/1/6-beginner-open-source" />.</li>
+                  <li>“What Is Open Source?” <i>Opensource.com</i>, <Link href="https://opensource.com/resources/what-open-source" /></li>
                 </ul>
               </SectionBody>
             </div>
