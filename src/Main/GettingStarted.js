@@ -16,7 +16,7 @@ const ProjectDivide = styled.div`
   height: ${props => props.height ? props.height : '50px'};
 `;
 
-export const Link = ({ href, children }) => <a href={href} target="_blank">{children}</a>;
+export const Link = ({ href, children }) => <a href={href} target="_blank">{children ? children : href}</a>;
 
 class GettingStarted extends Component {
   state = {};
@@ -44,7 +44,7 @@ class GettingStarted extends Component {
         </Section>
 
         <ProjectDivide/>
-        
+
         <Section>
           <h3 className="display-6">Projects</h3>
           <SectionBody>
@@ -97,8 +97,8 @@ class GettingStarted extends Component {
 
           <Project title="Wikipedia" imgSrc={wikipedia} width="50%" offset>
             <SectionBody>
-              Although most people have heard the name Wikipedia, not many have thought of contributing to it. Wikipedia is supported by
-              Wikimedia Foundation. Mediawiki tags their easy bugs with the 'easy' tag. <a href="https://phabricator.wikimedia.org/maniphest/?bug_severity=normal&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&bug_status=NEW&bug_status=REOPENED&columnlist=product%2Ccomponent%2Cchangeddate%2Cbug_severity%2Cpriority%2Cshort_desc&keywords=easy&keywords_type=allwords&order=changeddate%20DESC%2Cproduct%2Ccomponent">Click here</a> to
+              Although you have heard the name Wikipedia, have you ever thought of contributing to it?  Wikipedia is in fact open source, and is supported by
+              Wikimedia Foundation. Mediawiki helpfully tags their easy bugs with the 'easy' tag, which are perfect for beginners looking to get some experience. <a href="https://phabricator.wikimedia.org/maniphest/?bug_severity=normal&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&bug_status=NEW&bug_status=REOPENED&columnlist=product%2Ccomponent%2Cchangeddate%2Cbug_severity%2Cpriority%2Cshort_desc&keywords=easy&keywords_type=allwords&order=changeddate%20DESC%2Cproduct%2Ccomponent">Click here</a> to
               search for those introductory bugs.
             </SectionBody>
             <SectionBody style={{paddingBottom: 0}}>

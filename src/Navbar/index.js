@@ -9,7 +9,7 @@ class Nav extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="">Open Source at Middlebury</a>
+          <a className="navbar-brand" href="">A Beginner's Guide to Open Source</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
