@@ -42,8 +42,7 @@ class Intro extends Component {
             <div className="col-12 col-md-6">
               <SectionBody>
                 Open source software is computer software whose source code is made
-                publicly available for modification and enhancements. It is released under
-                various licenses like BSD, MIT etc. <a href="https://opensource.com/resources/what-open-source" target="_blank">Click here</a> to
+                publicly available for modification and enhancements. It is, essentially, crowd-sourced software, where anyone has to ability to contribute to and improve the code. <a href="https://opensource.com/resources/what-open-source" target="_blank">Click here</a> to
                 learn more.
               </SectionBody>
               <SectionBody>
